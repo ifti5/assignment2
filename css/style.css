@@ -1,0 +1,251 @@
+*{background-color:bisque;
+margin-left: 2%;
+margin-right: 2%;
+/* border: 100%; */
+}
+.navlist {
+    float: right;
+    /* margin-right: 20px; */
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: royalblue;
+    font-size: 110%;
+}
+
+li a:hover{
+    font-size: 120%;
+}
+.title{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkblue;
+    background-color:rgb(5, 228, 232);
+    padding: 5px;
+    border-radius: 5px;
+
+    
+}
+
+.mainfirst{
+    font-size: 50px;
+  text-align: center;
+
+}
+.mainfirstp{
+    color: rgb(123, 121, 123);
+    font-size: 32px;
+}
+.mainfirstbtn{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.mainfirstbtn:hover{
+    font-size: 16px;
+}
+.mainimg{
+    width: 100%;
+}
+.mainsecond{
+    display: flex;
+    justify-content: center;
+}
+.mainsecondimg{
+   
+    display: grid;
+   gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 5px; */
+}
+.mainsecondimg img{
+    width: 200px;
+    float: left;
+}
+.mainsecondarticle{
+    color: black;
+    float: right;
+}
+.mainsecondarticle h3{
+    /* border: 2px solid salmon; */
+    font-size: 60px;
+    text-align: start;
+}
+.secondcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+p {
+    color: rgb(103, 105, 104);
+}
+.secondcontainer h1{
+font-size: 40px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+margin-right: 300px;
+}
+.secondsectionimg{
+    /* border: 2px solid green; */
+    /* padding: 5px; */
+   float: right;
+    margin-right: 5%;
+}
+
+.thirdsec{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+.thirdsec div {
+    border: 1px solid orangered;
+    width: 15%;
+    padding-top: 2%;
+transition: all 2s ease-in-out;
+border-radius: 20px;
+    /* animation: animate 4s linear infinite; */
+    
+}
+.thirdsec div :hover{
+    border: 1px solid rgb(79, 0, 183);
+    /* padding: 20px; */
+    animation-name: example;
+animation-duration: 10s;
+border-radius: 5px;
+    }
+
+footer{
+    text-align: center;
+    margin-top: 10%;
+}
+.icon {
+text-align: center;    
+display: flex;
+gap: 2px;
+
+}
+.icon img{
+    /* width: 5%; */
+    text-align: center;
+
+}
+
+.copyright{
+    margin-top: 25px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 570px) {
+    .navlist{
+        text-decoration: none;
+        list-style: none;
+        display:list-item;
+        float: left;
+        margin-top: 10%;
+        
+    }
+    li a{
+        color:blue
+    }
+    .mainfirst{
+        font-size: 20px;
+        margin-top: 150px;
+      text-align: center;
+    
+    }
+    .mainfirstp{
+        color: rgb(123, 121, 123);
+        font-size: 15px;
+    }
+    .mainsecond{
+        display: grid;
+        margin-left: 100px;
+    }
+    .mainsecondimg{
+   
+        display: grid;
+       gap: 10px;
+        grid-template-columns: 1fr;
+        /* column-gap: 5px; */
+    }
+    .mainsecondimg img{
+        width: 200px;
+
+    }
+    .mainsecondarticle{
+        color: black;
+        float: right;
+    }
+    .mainsecondarticle h3{
+        /* border: 2px solid salmon; */
+        font-size: 40px;
+        text-align: start;
+    }
+    .mainsecondarticle p{
+    font-size: 14px;
+    }
+    .secondcontainer{
+        display: grid;
+        justify-content: center;
+    }
+    .secondcontainer h1{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    
+}
+    .secondsectionimg{
+        /* border: 2px solid green; */
+        /* padding: 5px; */
+        width:auto;
+        margin-right: 5%;
+    }
+    .thirdsec{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .thirdsec div {
+        border: 1px solid orangered;
+        width: 100%;
+        margin: 5px;
+        padding-top: 2%;
+    }
+    footer{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .icon {
+        /* background-color: aqua; */
+        display: grid;
+        margin-left: 40%;
+        gap: 15%;
+    /* width: 5px; */
+    
+    }
+    .icon img{
+        width: 35%;
+        text-align: center;
+    }
+    .copyright{
+        margin-top: 100px;
+        background-color: rgb(63, 2, 2);
+        border-radius: 5px;
+    }
+    
+  }
